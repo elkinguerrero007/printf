@@ -1,4 +1,5 @@
 #include "main.h"
+/*Este es el archivo de subfunciones*/
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
@@ -20,4 +21,37 @@ int _strlen(const char *s)
         while (s[i] != '\0')
 	        i++;
         return (i);
+}
+/**
+ * *_strcpy - Copy the string pointed
+ * @dest: Pointer of a char[] variable
+ * @src: Pointer of a char[] variable
+ * Return: Copy of the pointer char
+ */
+1:15
+char *_strcpy(char *dest, char *src)
+{
+int counter = 0;
+	while (*src != '\0')
+	{
+         	*dest = *src;
+		dest++;
+		src++;
+		counter++;
+	}
+        *dest = '\0';
+	dest -= counter;
+	return (dest);
+1:15
+int counter = 0;
+        while (*src != '\0')
+	{
+	        *dest = *src;
+                dest++;
+                src++;
+                counter++;
+        }
+        *dest = '\0';
+        dest -= counter;
+        return (dest);
 }
