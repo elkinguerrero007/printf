@@ -1,5 +1,5 @@
-#ifndef PRINTF_H
-#define PRINTF_H
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <unistd.h>
 #include <stdlib.h>
@@ -7,19 +7,19 @@
 
 /**
  * struct printTypes - Basic structure of printf
- * @specifier: id of char, char *, int, ...
+ * @formato: id of char, char *, int, ...
  * @f: Function that selects the data type
  * Description: id and function of printf
  */
-
-
 typedef struct printTypes
 {
-	char *specifier;
+	char *formato;
 	int (*f)();
 } pt;
 
-/* Principal */
+
+int _putchar(char c);
+int _strlen(const char *s);
+char *_strcpy(char *dest, char *src);
 int _printf(const char *format, ...);
-/*endprincipal*/
 #endif
