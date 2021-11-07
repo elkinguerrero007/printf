@@ -28,7 +28,6 @@ int _strlen(const char *s)
  * @src: Pointer of a char[] variable
  * Return: Copy of the pointer char
  */
-1:15
 char *_strcpy(char *dest, char *src)
 {
 int counter = 0;
@@ -42,7 +41,6 @@ int counter = 0;
         *dest = '\0';
 	dest -= counter;
 	return (dest);
-1:15
 int counter = 0;
         while (*src != '\0')
 	{
