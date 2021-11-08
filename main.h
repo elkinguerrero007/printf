@@ -18,9 +18,11 @@ typedef struct printTypes
 } pt;
 
 int _printf(const char *format, ...);
-int _putchar(char c);
 int _strlen(const char *s);
+int _abs(int n);
+char *itoa(int value, char *buffer, int base);
 char *_strcpy(char *dest, char *src);
+void rev_string(char *s);
 void printChar(va_list args, int *ans);
 void printString(va_list args, int *ans);
 
