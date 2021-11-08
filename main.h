@@ -17,9 +17,11 @@ typedef struct printTypes
 	int (*f)();
 } pt;
 
-
+int _printf(const char *format, ...);
 int _putchar(char c);
 int _strlen(const char *s);
 char *_strcpy(char *dest, char *src);
-int _printf(const char *format, ...);
+void printChar(va_list args, int *ans);
+void printString(va_list args, int *ans);
+
 #endif
