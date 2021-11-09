@@ -21,9 +21,9 @@ len2 = printf("OLet's try to printf a simple sentence.\n");
 /*printf("Unsigned octal:[%o]\n", ui);*/
 /*_printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);*/
 /*printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);*/
-/*_printf("_Character:[%c]\n", 'H');*/
+_printf("_Character:[%c]\n", 'H');
 /*printf("OCharacter:[%c]\n", 'H');*/
-/*_printf("_String:[%s]\n", "I am a string !");*/
+_printf("_String:[%s]\n", "I am a string !");
 printf("OString:[%s]\n", "I am a string !");
 /*_printf("Address:[%p]\n", addr);*/
 /*printf("Address:[%p]\n", addr);*/
