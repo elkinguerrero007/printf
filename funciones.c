@@ -1,8 +1,7 @@
-/**                                                                                                                                
- * _abs - Computes the absolute value of an integer                                                                                
- *                                                                                                                                 
- * @n: Integer parameter                                                                                                           
- * Return: n (int)                                                                                                                 
+/**                                                                        
+ * _abs - Computes the absolute value of an integer                                                                 
+ * @n: Integer parameter                                                                                               
+ * Return: n (int)                                                                                                    
  */
 int _abs(int n)
 {
@@ -39,9 +38,6 @@ void rev_string(char *s)
                 j--;
         }
 }
-
-
-
 /**                                                                                                          
  * itoa - Converts integeres to strings                                                                      
  * @value: Data to be converted                                                                              

@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-/*Este es el archivo de nuestra función _printf*/
+
 
 int printChar(va_list args);
 int printString(va_list args);
@@ -10,23 +10,23 @@ int printInteger(va_list args);
 /**
  * _printf - Emulate the behavior of printf original
  * @format: String constant of data
- * Return: Length (ans) of the output
+ *
+ * Return: Length of the output
  */
-
-/*prototipo y cuerpo de nuestra funcion _print*/
 int _printf(const char *format, ...)
 {
-unsigned int i;
-int ans = 0;
-va_list args;
-pt types[] = {
-/*declaramos nuestra lista*/
-{"c", printChar},
-{"s", printString},
-{"%", NULL},
-{NULL, NULL}
-};
-int notfound = 1;
+	unsigned int i;
+	int ans = 0;
+	va_list args;
+	pt types[] = {
+		{"c", printChar},
+		{"s", printString},
+		{"%", printPercentage},
+		{"d", printInteger},
+		{"i", printInteger},
+		{NULL, NULL}
+	};
+	int notfound = 1;
 
 	if (format == NULL || (*format == '%' && *(format + 1) == '\0'))
 		return (-1);
@@ -120,3 +120,16 @@ int printInteger(va_list args)
 
 	return (write(1, str, size));
 }
+/**
+ * _strlen - Count the number of chars in a string
+ * @s: String given
+ * Return: Length of string
+ */
+int _strlen(const char *s)
+{
+	int i = 0;
+        while (s[i] != '\0')
+	        i++;
+        return (i);
+}
+

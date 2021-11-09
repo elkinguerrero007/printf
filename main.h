@@ -23,7 +23,7 @@ int _abs(int n);
 char *itoa(int value, char *buffer, int base);
 char *_strcpy(char *dest, char *src);
 void rev_string(char *s);
-void printChar(va_list args, int *ans);
-void printString(va_list args, int *ans);
+/*int printChar(va_list args, int *ans);
+  int printString(va_list args, int *ans);*/
 
 #endif
