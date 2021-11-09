@@ -26,6 +26,7 @@ pt types[] = {
 {"i", printInteger},
 {NULL, NULL}
 };
+int notfound = 1;
 
  
 if (format == NULL || (*format == '%' && *(format + 1) == '\0'))
@@ -42,9 +43,12 @@ if (*format == *(types[i].formato))
 {
 ans += types[i].f(args);
 format++;
+notfound = 0;
 break;
 }
 }
+if (notfound)
+ans += write(1, format - 1, 1);
 }
 else
 {
