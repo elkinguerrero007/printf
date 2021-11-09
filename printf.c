@@ -104,7 +104,7 @@ return (write(1, &p, 1));
  */
 int printInteger(va_list args)
 {
-char buff[2];
+char buff[33];
 char *str;
 int num = va_arg(args, int);
 int size;
