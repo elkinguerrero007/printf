@@ -26,7 +26,8 @@ pt types[] = {
 {"i", printInteger},
 {NULL, NULL}
 };
-int notfound = 1;
+
+ 
 if (format == NULL || (*format == '%' && *(format + 1) == '\0'))
 return (-1);
 va_start(args, format);
@@ -41,12 +42,9 @@ if (*format == *(types[i].formato))
 {
 ans += types[i].f(args);
 format++;
-notfound = 0;
 break;
 }
 }
-if (notfound)
-ans += write(1, format - 1, 1);
 }
 else
 {
@@ -102,7 +100,7 @@ return (write(1, &p, 1));
  */
 int printInteger(va_list args)
 {
-char buff[33];
+char buff[2];
 char *str;
 int num = va_arg(args, int);
 int size;
