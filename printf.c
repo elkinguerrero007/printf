@@ -27,8 +27,6 @@ pt types[] = {
 {NULL, NULL}
 };
 int notfound = 1;
-
- 
 if (format == NULL || (*format == '%' && *(format + 1) == '\0'))
 return (-1);
 va_start(args, format);
