@@ -1,0 +1,32 @@
+.TH _printf 3 "9 november 2021" "_printf man page"
+.SH NAME
+.B _printf
+- emulate the original printf function from the stdio.h library.
+.SH SYNOPSIS
+.B _printf
+.I FORMAT [ARGUMENTS]
+.SH DESCRIPTION
+Print ARGUMENT(S) depending of the "formato" demanded. This could be an int (decimal or integer), character (char) or a string.
+
+.B FORMAT
+provide this program the instructions to print the "formato" needed, the interpreted sequenses are:
+
+.B %%
+prints a single %
+
+.B %c
+prints a single char
+
+.B %s
+prints a string
+
+.B %d
+prints a decimal number
+
+.B %i
+prints a decimal numb
+
+.SH BUGS
+No known bugs, but if you find some, let us know!.
+.SH AUTHOR
+Written by Elkin Guerrero Bastidas and Luis Ernesto Perafán Chacón
